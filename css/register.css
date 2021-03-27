@@ -1,0 +1,207 @@
+#errormail {
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(243, 9, 9);
+  color: white;
+  visibility: hidden;
+
+}
+header {
+  text-align: center;
+  font-size: 30px;
+  color: #325aa8;
+  font-family: MyFont;
+}
+body {
+  background-image: url(../imazhe/bg1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+}
+a,
+p {
+  font-family: MyFont;
+}
+
+.total {
+  background-color: white;
+  opacity: 0.8;
+  height: 850px;
+  width: 400px;
+  margin-top: 3%;
+  margin-left: 35%;
+}
+.trupi {
+  text-align: center;
+  padding: 10px;
+  margin-top: -40px;
+}
+header {
+  background-color: white; /*Ngjyra e te backroundit te pjeses Login */
+  color: blue; /* Ngjyra e tekstit brenda */
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 5%;
+}
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 3px;
+  color: blue;
+  font-weight: 700;
+}
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+#bt {
+  text-decoration: underline;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+}
+#bt:hover {
+  text-decoration: underline;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background-color: rgb(196, 189, 189);
+  color: blue;
+  font-weight: 700;
+}
+::placeholder {
+  color: black;
+}
+#chbox {
+  margin-left: -60%;
+}
+.radio {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 20px;
+}
+.radio + .radio {
+  margin-left: 45px;
+}
+.radio input[type="radio"] {
+  display: none;
+}
+.radio span {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  border: 3px solid #0000ff;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.radio span:after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background: blue;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: 300ms ease-in-out 0s;
+}
+.radio input[type="radio"]:checked ~ span:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+#exit {
+  font-size: 35px;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  padding-right: 90%;
+}
+#exit:hover {
+  font-size: 35px;
+  color: #424040;
+}
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+  .total {
+    width: 250px;
+    margin-left: 10%;
+    height: 900px;
+  }
+  header {
+    font-size: 25px;
+  }
+
+  #bt,
+  #reset {
+    font-size: 17px;
+    font-family: MyFont;
+    width: 150px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 770px) and (min-width: 330px) {
+  .total {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 550px) and (min-width: 330px) {
+  .total {
+    margin-left: 10%;
+    width: 300px;
+  }
+  header {
+    font-size: 25px;
+  }
+
+  #bt,
+  #reset {
+    font-size: 17px;
+    font-family: MyFont;
+    width: 230px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .total {
+    width: 600px;
+    margin-left: 37%;
+  }
+}
